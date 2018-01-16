@@ -5,7 +5,7 @@ namespace FrequentWordConsole
 {
     class WordRanker
     {
-        public Dictionary<string,long> RankedWords(Dictionary<string, long> words, int rank)
+        public Dictionary<string,long> RankWords(Dictionary<string, long> words, int rank)
         {
             Dictionary<string,long> returnDictionary = new Dictionary<string, long>();
 
