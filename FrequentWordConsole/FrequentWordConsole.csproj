@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="URLFetcher.cs" />
+    <Compile Include="WordCollector.cs" />
+    <Compile Include="WordRanker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
