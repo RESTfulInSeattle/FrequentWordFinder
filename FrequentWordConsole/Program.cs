@@ -24,7 +24,7 @@ namespace FrequentWordConsole
                     if (words.Keys.Count > 0)
                     {
                         WordRanker wr = new WordRanker();
-                        Dictionary<string, long> rankedWords = wr.RankWords(words, 10);
+                        List<KeyValuePair<string, long>> rankedWords = wr.RankWords(words, 10);
 
                         foreach (KeyValuePair<string,long> word in rankedWords)
                         {
