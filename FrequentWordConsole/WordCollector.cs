@@ -20,7 +20,7 @@ namespace FrequentWordConsole
                     }
                     else
                     {
-                        words.Add(word,1);
+                        if(word.Length>0 && !word.Contains(" ") && !word.Contains("\r\n")) words.Add(word,1);
                     }
                 }
             }

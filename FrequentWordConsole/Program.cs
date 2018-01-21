@@ -26,9 +26,10 @@ namespace FrequentWordConsole
                         WordRanker wr = new WordRanker();
                         List<KeyValuePair<string, long>> rankedWords = wr.RankWords(words, 10);
 
+                        Console.WriteLine("Top 10 Words:");
+
                         foreach (KeyValuePair<string,long> word in rankedWords)
                         {
-                            Console.WriteLine("Top 10 Words:");
                             Console.WriteLine($"Word: {word.Key}  Count: {word.Value}");
                         }
                     }

@@ -14,7 +14,10 @@ namespace FrequentWordConsole
                 List<KeyValuePair<string,long>> sortedWords = words.ToList();
                 sortedWords.Sort((pair1, pair2) => pair2.Value.CompareTo(pair1.Value));
 
-                returnList = (List<KeyValuePair<string, long>>) sortedWords.Take(rank);
+                for (int i = 0; i < rank; i++)
+                {
+                    returnList.Add(sortedWords[i]);
+                }
             }
            
             return returnList;
